@@ -1,0 +1,2 @@
+const target=new Date('2026-10-11T09:00:00');
+setInterval(()=>{let d=target-new Date();let s=Math.max(0,Math.floor(d/1000));let days=Math.floor(s/86400);s%=86400;let h=Math.floor(s/3600);s%=3600;let m=Math.floor(s/60);let sec=s%60;document.getElementById('countdown').textContent=`${days}d ${h}h ${m}m ${sec}s`;},1000);
