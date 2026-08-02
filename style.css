@@ -1,310 +1,239 @@
-/* ---------- GENERAL ---------- */
+/* ---------- GOOGLE FONT STYLES ---------- */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+/* ---------- BODY ---------- */
 
-    background:#fcf8f3;
-
-    font-family:'Cormorant Garamond', serif;
-
-    color:#5f5144;
-
-    text-align:center;
-
-    line-height:1.6;
-
+body {
+    background: #fcf8f3;
+    font-family: 'Cormorant Garamond', serif;
+    color: #5f5144;
+    text-align: center;
+    line-height: 1.6;
 }
 
 /* ---------- HERO ---------- */
 
-.hero{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    padding:60px 20px;
-
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
 }
 
 /* ---------- NAMES ---------- */
 
-.names{
-
-    font-family:'Great Vibes', cursive;
-
-    font-size:95px;
-
-    color:#a37b52;
-
-    font-weight:normal;
-
-    margin-bottom:5px;
-
+.names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 95px;
+    color: #a37b52;
+    font-weight: normal;
+    margin-bottom: 5px;
 }
 
-.names span{
-
-    font-size:70px;
-
-    color:#d1b48c;
-
+.names span {
+    color: #d1b48c;
+    font-size: 70px;
 }
 
 /* ---------- DATE ---------- */
 
-.date{
-
-    font-size:28px;
-
-    letter-spacing:3px;
-
-    color:#8c7b6d;
-
-    margin-bottom:45px;
-
+.date {
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #8c7b6d;
+    margin-bottom: 45px;
 }
 
 /* ---------- COUNTDOWN ---------- */
 
-.countdown-title{
-
-    font-size:40px;
-
-    color:#8d6b4d;
-
-    margin-bottom:20px;
-
+.countdown-title {
+    font-size: 40px;
+    color: #8d6b4d;
+    margin-bottom: 20px;
 }
 
-#countdown{
-
-    font-size:55px;
-
-    font-weight:bold;
-
-    color:#b88b5c;
-
-    margin-bottom:40px;
-
+#countdown {
+    font-size: 55px;
+    font-weight: bold;
+    color: #b88b5c;
+    margin-bottom: 50px;
 }
 
-/* ---------- RSVP BUTTON ---------- */
+/* ---------- BUTTONS ---------- */
 
-.btn{
-
-    display:inline-block;
-
-    background:#b88b5c;
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:16px 40px;
-
-    border-radius:50px;
-
-    font-size:20px;
-
-    transition:.3s;
-
-    margin-bottom:60px;
-
+.btn {
+    display: inline-block;
+    background: #b88b5c;
+    color: white;
+    text-decoration: none;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: 0.3s ease;
+    margin: 15px;
 }
 
-.btn:hover{
-
-    background:#9e7448;
-
-    transform:translateY(-3px);
-
+.btn:hover {
+    background: #9e7448;
+    transform: translateY(-3px);
 }
 
 /* ---------- INVITATION ---------- */
 
-.hero img:first-of-type{
+.hero img:first-of-type {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 20px;
+    margin: 50px auto;
+    display: block;
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
 
-    width:100%;
+/* ---------- HEADINGS ---------- */
 
-    max-width:650px;
+h2 {
+    font-size: 46px;
+    color: #8d6b4d;
+    margin-top: 80px;
+    margin-bottom: 25px;
+}
 
-    border-radius:20px;
+/* ---------- PARAGRAPHS ---------- */
 
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-
-    margin:40px auto;
-
-    display:block;
-
+p {
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
 /* ---------- GALLERY ---------- */
 
-h2{
-
-    font-size:48px;
-
-    color:#8d6b4d;
-
-    margin-top:80px;
-
-    margin-bottom:30px;
-
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
 }
 
-.gallery{
-
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:25px;
-
+.gallery img {
+    width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.35s;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
 }
 
-.gallery img{
-
-    width:320px;
-
-    height:420px;
-
-    object-fit:cover;
-
-    border-radius:20px;
-
-    transition:.35s;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-
+.gallery img:hover {
+    transform: scale(1.04);
 }
 
-.gallery img:hover{
+/* ---------- CARDS ---------- */
 
-    transform:scale(1.04);
-
+.links-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin: 70px auto;
 }
 
-/* ---------- PARAGRAPH ---------- */
+.card {
+    width: 380px;
+    background: white;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: 0.3s;
+}
 
-p{
+.card:hover {
+    transform: translateY(-8px);
+}
 
-    font-size:22px;
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 34px;
+}
 
+.card p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* ---------- DIVIDER ---------- */
+
+hr {
+    border: none;
+    height: 1px;
+    background: #e3d6c7;
+    width: 70%;
+    margin: 70px auto;
 }
 
 /* ---------- MOBILE ---------- */
 
-@media(max-width:768px){
+@media (max-width:768px) {
 
-.names{
+    .hero {
+        padding: 40px 15px;
+    }
 
-    font-size:65px;
+    .names {
+        font-size: 64px;
+    }
 
-}
+    .names span {
+        font-size: 48px;
+    }
 
-.names span{
+    .date {
+        font-size: 22px;
+    }
 
-    font-size:50px;
+    .countdown-title {
+        font-size: 28px;
+    }
 
-}
+    #countdown {
+        font-size: 34px;
+    }
 
-.date{
+    h2 {
+        font-size: 34px;
+    }
 
-    font-size:22px;
+    p {
+        font-size: 19px;
+    }
 
-}
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.countdown-title{
+    .gallery img {
+        width: 90%;
+        height: auto;
+    }
 
-    font-size:30px;
+    .links-section {
+        flex-direction: column;
+        align-items: center;
+    }
 
-}
+    .card {
+        width: 95%;
+    }
 
-#countdown{
-
-    font-size:36px;
-
-}
-
-.gallery img{
-
-    width:90%;
-
-    height:auto;
-
-}
-    /* ---------- EXTRA LINKS ---------- */
-
-.links-section{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    gap:30px;
-
-    margin:70px auto;
-
-}
-
-.card{
-
-    background:white;
-
-    width:380px;
-
-    padding:35px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-}
-
-.card h2{
-
-    margin-top:0;
-
-    margin-bottom:15px;
-
-    font-size:34px;
-
-}
-
-.card p{
-
-    font-size:20px;
-
-    margin-bottom:25px;
-
-}
-
-@media(max-width:768px){
-
-.links-section{
-
-    flex-direction:column;
-
-    align-items:center;
-
-}
-
-.card{
-
-    width:95%;
-
-}
-
-}
-
+    .btn {
+        width: 90%;
+        padding: 16px;
+        font-size: 18px;
+    }
 }
