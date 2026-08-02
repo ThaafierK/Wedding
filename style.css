@@ -1,4 +1,4 @@
-/* ---------- GOOGLE FONT STYLES ---------- */
+/* ---------- RESET ---------- */
 
 * {
     margin: 0;
@@ -57,10 +57,44 @@ body {
 }
 
 #countdown {
-    font-size: 55px;
+    margin-bottom: 50px;
+}
+
+/* ---------- COUNTDOWN BOXES ---------- */
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 50px 0;
+}
+
+.count-box {
+    background: white;
+    width: 150px;
+    padding: 25px 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.count-box:hover {
+    transform: translateY(-6px);
+}
+
+.number {
+    font-size: 60px;
     font-weight: bold;
     color: #b88b5c;
-    margin-bottom: 50px;
+    line-height: 1;
+}
+
+.label {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #7a6651;
+    letter-spacing: 1px;
 }
 
 /* ---------- BUTTONS ---------- */
@@ -73,7 +107,7 @@ body {
     padding: 16px 40px;
     border-radius: 50px;
     font-size: 20px;
-    transition: 0.3s ease;
+    transition: .3s ease;
     margin: 15px;
 }
 
@@ -124,7 +158,7 @@ p {
     height: 420px;
     object-fit: cover;
     border-radius: 20px;
-    transition: 0.35s;
+    transition: .35s;
     box-shadow: 0 10px 25px rgba(0,0,0,.15);
 }
 
@@ -132,7 +166,7 @@ p {
     transform: scale(1.04);
 }
 
-/* ---------- CARDS ---------- */
+/* ---------- INFORMATION CARDS ---------- */
 
 .links-section {
     display: flex;
@@ -148,7 +182,7 @@ p {
     padding: 35px;
     border-radius: 22px;
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .card:hover {
@@ -200,8 +234,17 @@ hr {
         font-size: 28px;
     }
 
-    #countdown {
-        font-size: 34px;
+    .count-box {
+        width: 120px;
+        padding: 20px;
+    }
+
+    .number {
+        font-size: 42px;
+    }
+
+    .label {
+        font-size: 18px;
     }
 
     h2 {
