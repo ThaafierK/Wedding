@@ -1,223 +1,211 @@
-/* ---------- GENERAL ---------- */
+/* ==========================
+   RESET
+========================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+/* ==========================
+   BODY
+========================== */
 
-    background:#fcf8f3;
-
-    font-family:'Cormorant Garamond', serif;
-
-    color:#5f5144;
-
-    text-align:center;
-
-    line-height:1.6;
-
+body {
+    background: #fcf8f3;
+    font-family: 'Cormorant Garamond', serif;
+    color: #5f5144;
+    text-align: center;
+    line-height: 1.6;
 }
 
-/* ---------- HERO ---------- */
+/* ==========================
+   HERO
+========================== */
 
-.hero{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    padding:60px 20px;
-
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
 }
 
-/* ---------- NAMES ---------- */
+/* ==========================
+   NAMES
+========================== */
 
-.names{
-
-    font-family:'Great Vibes', cursive;
-
-    font-size:95px;
-
-    color:#a37b52;
-
-    font-weight:normal;
-
-    margin-bottom:5px;
-
+.names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 95px;
+    color: #a37b52;
+    font-weight: normal;
+    margin-bottom: 10px;
 }
 
-.names span{
-
-    font-size:70px;
-
-    color:#d1b48c;
-
+.names span {
+    color: #d1b48c;
 }
 
-/* ---------- DATE ---------- */
+/* ==========================
+   DATE
+========================== */
 
-.date{
-
-    font-size:28px;
-
-    letter-spacing:3px;
-
-    color:#8c7b6d;
-
-    margin-bottom:45px;
-
+.date {
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #8c7b6d;
+    margin-bottom: 40px;
 }
 
-/* ---------- COUNTDOWN ---------- */
+/* ==========================
+   COUNTDOWN
+========================== */
 
-.countdown-title{
-
-    font-size:40px;
-
-    color:#8d6b4d;
-
-    margin-bottom:20px;
-
+.countdown-title {
+    font-size: 40px;
+    color: #8d6b4d;
+    margin-bottom: 30px;
 }
 
-#countdown{
-
-    font-size:55px;
-
-    font-weight:bold;
-
-    color:#b88b5c;
-
-    margin-bottom:40px;
-
+#countdown {
+    margin: 40px 0 50px;
 }
 
-/* ---------- RSVP BUTTON ---------- */
+/* Countdown Boxes */
 
-.btn{
-
-    display:inline-block;
-
-    background:#b88b5c;
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:16px 40px;
-
-    border-radius:50px;
-
-    font-size:20px;
-
-    transition:.3s;
-
-    margin-bottom:60px;
-
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
-.btn:hover{
-
-    background:#9e7448;
-
-    transform:translateY(-3px);
-
+.count-box {
+    background: white;
+    width: 150px;
+    padding: 25px 15px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: .3s;
 }
 
-/* ---------- INVITATION ---------- */
-
-.hero img:first-of-type{
-
-    width:100%;
-
-    max-width:650px;
-
-    border-radius:20px;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-
-    margin:40px auto;
-
-    display:block;
-
+.count-box:hover {
+    transform: translateY(-5px);
 }
 
-/* ---------- GALLERY ---------- */
-
-h2{
-
-    font-size:48px;
-
-    color:#8d6b4d;
-
-    margin-top:80px;
-
-    margin-bottom:30px;
-
+.number {
+    font-size: 56px;
+    font-weight: bold;
+    color: #b88b5c;
+    line-height: 1;
 }
 
-.gallery{
-
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:25px;
-
+.label {
+    margin-top: 12px;
+    font-size: 20px;
+    color: #7a6651;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.gallery img{
-
-    width:320px;
-
-    height:420px;
-
-    object-fit:cover;
-
-    border-radius:20px;
-
-    transition:.35s;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-
-}
-
-.gallery img:hover{
-
-    transform:scale(1.04);
-
-}
-
-/* ---------- PARAGRAPH ---------- */
-
-p{
-
-    font-size:22px;
-/* ---------- DIVIDER ---------- */
-
-hr {
-    border: none;
-    height: 1px;
-    background: #e3d6c7;
-    width: 70%;
-    margin: 70px auto;
-}
-
-/* ---------- BUTTON GROUP ---------- */
+/* ==========================
+   BUTTONS
+========================== */
 
 .button-group {
     margin: 40px 0 60px;
 }
 
-.button-group .btn {
+.btn {
+    display: inline-block;
+    background: #b88b5c;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 40px;
     margin: 10px;
+    font-size: 18px;
+    transition: .3s;
 }
 
-/* ---------- MOBILE ---------- */
+.btn:hover {
+    background: #9e7448;
+    transform: translateY(-3px);
+}
+
+/* ==========================
+   DIVIDER
+========================== */
+
+hr {
+    width: 70%;
+    margin: 60px auto;
+    border: none;
+    border-top: 1px solid #e3d6c7;
+}
+
+/* ==========================
+   INVITATION
+========================== */
+
+.hero img:first-of-type {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h2 {
+    font-size: 46px;
+    color: #8d6b4d;
+    margin: 70px 0 25px;
+}
+
+/* ==========================
+   PARAGRAPHS
+========================== */
+
+p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    transition: .35s;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+/* ==========================
+   MOBILE
+========================== */
 
 @media (max-width:768px) {
 
@@ -225,52 +213,55 @@ hr {
         padding: 40px 15px;
     }
 
-    ...
-}
+    .names {
+        font-size: 64px;
+    }
 
-    
-}
+    .date {
+        font-size: 22px;
+    }
 
-/* ---------- MOBILE ---------- */
+    .countdown-title {
+        font-size: 30px;
+    }
 
-@media(max-width:768px){
+    .countdown-container {
+        gap: 15px;
+    }
 
-.names{
+    .count-box {
+        width: 140px;
+        padding: 20px;
+    }
 
-    font-size:65px;
+    .number {
+        font-size: 42px;
+    }
 
-}
+    .label {
+        font-size: 16px;
+    }
 
-.names span{
+    h2 {
+        font-size: 34px;
+    }
 
-    font-size:50px;
+    p {
+        font-size: 19px;
+    }
 
-}
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.date{
+    .gallery img {
+        width: 90%;
+        height: auto;
+    }
 
-    font-size:22px;
-
-}
-
-.countdown-title{
-
-    font-size:30px;
-
-}
-
-#countdown{
-
-    font-size:36px;
-
-}
-
-.gallery img{
-
-    width:90%;
-
-    height:auto;
-
-}
-
+    .btn {
+        width: 90%;
+        margin: 8px auto;
+    }
 }
